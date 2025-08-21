@@ -15,17 +15,17 @@ export defautl function IlMioMenu() {
     }, []);
 
   return ( 
-    <div className={styles.dropdown} ref={munuref}>
-      <button className={styles.button}
+    <divclassName={"dropdown text-center"} ref={munuref}>
+      <button className={btn "btn-dropdown dropdown-toggle"}
         onClick={() => setisAperto(!isAperto)}
         >MENU >></button>
       {isAperto && (
-      <ul className={styles.menu}>
-        <li><a href="/home">HOME</li>
-        <li><a href="/esperienze di lavoro">WORK</li>
-        <li><a href="/formazione">FORMAZIONE</li>
-        <li><a href="/passioni">PASSIONI</li>
-        <li><a href="/contatti"></li>
+      <ul className={"link-list"}>
+        <li className={"dropdown-item list-item"}><a href="/home">HOME</li>
+        <li  className={"dropdown-item list-item"}><a href="/esperienze di lavoro">WORK</li>
+        <li  className={"dropdown-item list-item"}><a href="/formazione">FORMAZIONE</li>
+        <li  className={"dropdown-item list-item"}><a href="/passioni">PASSIONI</li>
+        <li  className={"dropdown-item list-item"}><a href="/contatti"></li>
       </ul>
           )}
     </div>
